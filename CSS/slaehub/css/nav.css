@@ -1,0 +1,169 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    display: flex;
+    width: 100%;
+    height: 110px;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+    position: relative;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+    
+}
+.navbar{
+    padding-top: 50px;
+    margin-left: 0px;
+    font-family: "Dosis", sans-serif;
+   
+}
+.navbar ul li{
+    display: inline;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 50px
+    
+   
+}
+.navbar ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+/* logo  */
+
+.logo img{
+    position: absolute;
+    right: 100px;
+    left: 880px;
+    top: 40px;
+}
+
+/* my cart  */
+
+.cart{
+    display: flex;
+    margin-top: 40px;
+    margin-right: 50px;
+}
+.search{
+    margin: 10px;
+}
+.search i{
+    font-size: 20px;
+    padding: 5px;
+    padding-top: 1px;
+}
+.search h5{
+    display: inline;
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 0px;
+   
+}
+.account{
+    margin: 10px;
+    font-family: "Dosis", sans-serif;
+    padding: 5px;
+    padding-top: 0px;
+}
+.account h5{
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px;
+    padding-top: 3px;
+}
+.my_c{
+    margin: 5px;
+    padding: 5px;
+}
+.my_c i{
+    font-size: 25px;
+    padding: 5px;
+    padding-top: 0px;
+    margin-top: -3px;
+}
+.my_c h5{
+    display: inline;
+    font-family: "Dosis", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 0px;
+}
+.bg_img{
+    background-image: url(/slaehub/img/bgimg.avif);
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+    
+}
+.text{
+    position: absolute;
+    top: 30%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 20px;
+    color: azure;
+}
+.text button{
+    background-color: white;
+    margin-top: 30px;
+    margin-left: 10px;
+    padding: 20px 20px 20px 20px;
+        /* transition: 1s;
+        font-weight: bolder;
+        font-size: 16px;
+        border: 1px solid white; */
+}
+.text:hover{
+    box-shadow: inset 400px 0px 0px 0px black;
+    color: aliceblue;
+}
+.content{
+    position: relative;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+}
+.content1{
+    position: absolute;
+    left: 550px;
+    top: 190px;
+}
+.content.h5{
+    font-family: "Dosis", sans-serif;
+    
+}
+.coll{
+    position: relative;
+    top: 550px;
+    left: 0px;
+}
+.de_Col{
+    position: relative;
+    scale: 1.5;
+}
+.img_1:hover {
+    scale: 1.1;
+}
+.img_1{
+    vertical-align: top;
+   position: absolute;
+    top: 0px;
+    left: 400px;
+    overflow: hidden;
+    transition: 2s;
+}
+.de_Col_1{
+    scale: 0.4;
+    position: absolute;
+    right: 62.4%;
+}

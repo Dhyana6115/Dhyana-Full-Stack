@@ -1,0 +1,44 @@
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(240, 197, 132);
+
+}
+.radius{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(35, 247, 247);
+}
+.gojo{
+    flex-direction: row;
+    display: flex;
+}
+.zoo.foo{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(190, 135, 241);
+}
+.some{
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+}
+.hello{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+}
+.hiii{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(78, 171, 140);
+}
+.cane{
+    width: 200px;
+    height: 200px;
+    background-color: darkgoldenrod;
+}

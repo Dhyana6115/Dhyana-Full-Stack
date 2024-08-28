@@ -1,0 +1,28 @@
+body{
+    margin: 40px 250px;
+    padding: 40px 250px;
+}
+.box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(252, 236, 251);
+    float: left;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+}
+.box2{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(80, 89, 185);
+    float: left;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 100px;
+
+}
+.clear{
+    clear: both;
+}
