@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>currying function</title>
+</head>
+<body>
+    <script>
+        ///currying shortend the closure by combinig the function...currying is the solution of closure . it help to shortend the code
+        function add(a){
+            return function(b){
+                return function(c){
+                    return a + b + c;
+                }
+            }
+        }
+
+        const finaloutput =add(10)(20)(18)
+        document.write("sum ="+finaloutput)
+
+    </script>
+</body>
+</html>

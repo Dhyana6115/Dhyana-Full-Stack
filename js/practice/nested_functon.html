@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested function</title>
+</head>
+<body>
+    <script>
+        function outer(){
+            document.write("outer fucntion<br>")
+                function inner(){
+                    document.write("inner fucntion<br>")
+                        function nested_inner(){
+                            document.write("nested_inner fucntion")
+                        }
+                        nested_inner()
+                }
+                inner()
+        }
+        outer()
+    </script>
+</body>
+</html>

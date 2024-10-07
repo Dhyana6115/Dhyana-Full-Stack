@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure function</title>
+</head>
+<body>
+    <script>
+        ///**closure is solution of nested function ...it is used to call function in loop itslf.by using return keyword**///
+        function outer(){
+            document.write("outer function<br>")
+                return function(){
+                    document.write("inner function<br>")
+                        return function(){
+                            document.write("nest_inner function<br>")
+                        }
+                }
+        }
+        const function1= outer()
+        const function2=function1()
+        const result =function2() 
+
+
+        ///Example of addition///
+
+        function add(a){
+            return function(b){
+                return function(c){
+                    return a + b + c;
+                }
+            }
+        }
+
+        const sum1=add(12)
+        const sum2 =sum1(5)
+        const output = sum2(10)
+        document.write("sum ="+output)
+
+
+
+
+
+
+    </script>
+</body>
+</html>

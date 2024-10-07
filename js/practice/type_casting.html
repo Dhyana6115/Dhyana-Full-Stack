@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div class="col-6 mx-auto shadow p-5 my-5">
+    <form action="">
+    <div class="st-4">
+        <input type="number" class="form-control" id="value1" placeholder="Enter First value">
+        </div>
+        <div class="mt-4">
+            <input type="number" class="form-control" id="value2" placeholder="Enter Second value">
+        </div>
+        <div>
+        <button type="button" class="btn btn-warning mb-3 mt-5 mx-3" onclick="sum()">+</button>
+        <button type="button" class="btn btn-dark mb-3 mt-5 mx-3" onclick="sub()">-</button>
+        <button type="button" class="btn btn-secondary mb-3 mt-5 mx-3" onclick="multi()">*</button>
+        <button type="button" class="btn btn-info mb-3 mt-5 mx-3" onclick="div()">/</button><br><br>
+        </div>
+        <p id="ack" class="mb-3 mt-5 mx-5"></p>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+        function sum(){
+            var value1 =document.getElementById('value1').value;
+            var value2 =document.getElementById('value2').value;
+
+            console.log(typeof value1);  ///to check the datatype
+            console.log(typeof value2);
+
+            console.log(value1+value2)
+
+            ////type conversion or type casting
+            ///string to number -----> Number() Method
+            value1= Number(value1)
+            value2=Number(value2)
+
+            console.log(typeof value1)
+            console.log(typeof value2)
+            console.log(value1 + value2)
+
+            var result = `addition of ${value1} & ${value2} =${value1+value2}`;
+            document.getElementById('ack').innerHTML=result;
+            
+        }
+        function sub(){
+        var value1 =document.getElementById('value1').value;
+        var value2 =document.getElementById('value2').value;
+        var result = `sub of ${value1} & ${value2} =${value1-value2}`;
+        document.getElementById('ack').innerHTML=result;
+        }
+        function multi(){
+        var value1 =document.getElementById('value1').value;
+        var value2 =document.getElementById('value2').value;
+        var result = `multi of ${value1} & ${value2} =${value1*value2}`;
+        document.getElementById('ack').innerHTML=result;
+        }
+        function div(){
+        var value1 =document.getElementById('value1').value;
+        var value2 =document.getElementById('value2').value;
+        var result = `div of ${value1} & ${value2} =${value1/value2}`;
+        document.getElementById('ack').innerHTML=result;
+        }
+
+
+
+
+    </script>
+</body>
+</html>
